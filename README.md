@@ -26,6 +26,7 @@ Game :
 
 
 ### defining the game variables
+
 player_name = input(prompt = " Hey\U0001F44B what your name ?")
 print("\n")
 
@@ -75,6 +76,7 @@ def stage_1():
 
     chances = 2
 ### looping until a user is out of guesses
+
     while chances > 0 :
         
         print(f"""{player_name}, how are you planning to get to the hospital ?
@@ -84,7 +86,8 @@ def stage_1():
       
         answer = input(prompt = ">")
         
-### Applying the conditions        
+### Applying the conditions   
+
         if answer == "1" or answer == "rent a car":
             print(f""" excelent choice your a step away from saving your {person_of_interest}.\n """)
             stage_2()
@@ -110,7 +113,8 @@ print(f"------------------------------------------------------------------------
 def stage_2():
     
     
-### looping until a user is out of guesses    
+### looping until a user is out of guesses
+
     option = 2
 
     while option > 0:
@@ -121,7 +125,8 @@ def stage_2():
         2) D'ont get fuel """ )
         
         answer = input(prompt = ">")
-### Applying the conditions        
+### Applying the conditions    
+
         if answer == "1" or answer == "Get fuel":
             print(f"""correct choice, the hospital is far away and this is the last petrol station it would.\n""")
             stage_3()
@@ -151,7 +156,8 @@ def stage_3():
     On your way to the hospital, at a road roundabout you notice 3 roads, one of this roads will take you 
     straight to the hospital.\n """)
     
-### looping until a user is out of guesses         
+### looping until a user is out of guesses    
+
     chance = 2
 
     while chance > 0 :
@@ -189,6 +195,7 @@ def stage_3():
         
         
 ### defining the fail funtion    
+
 def fail():
     print("\n")
     print(f""" Oh, I'm sorry {player_name}, looks like you've arrived late to the 
