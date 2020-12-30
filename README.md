@@ -1,10 +1,10 @@
 # python---game-sample
-## importing 
+### importing 
 
 from sys import exit
 
-## Intrducing the game
-# welcome to my game called , save the day 
+### Intrducing the game
+### welcome to my game called , save the day 
 
 """
 Game :
@@ -25,7 +25,7 @@ Game :
 """
 
 
-# defining the game variables
+### defining the game variables
 player_name = input(prompt = " Hey\U0001F44B what your name ?")
 print("\n")
 
@@ -35,7 +35,7 @@ print("\n")
 person_of_interest = input(prompt = " who you miss the most in your family? ")
 print("\n")
 
-# game start   
+### game start   
 def game_start():
     
     print(f"""\033[1;35m Welcome, \033[4;30m{player_name}\033[0;m!, are you ready?""")
@@ -56,7 +56,7 @@ to bring medicines. If not your {person_of_interest} will die""")
     
     print("\n")
 
-# player need to decide on his mean of transport
+### player need to decide on his mean of transport
 
 
     input(prompt = '\n<please press"\033[01;04;91mEnter\033[0;m" to continue>\n')
@@ -74,7 +74,7 @@ def stage_1():
     
 
     chances = 2
-# looping until a user is out of guesses
+### looping until a user is out of guesses
     while chances > 0 :
         
         print(f"""{player_name}, how are you planning to get to the hospital ?
@@ -84,7 +84,7 @@ def stage_1():
       
         answer = input(prompt = ">")
         
-# Applying the conditions        
+### Applying the conditions        
         if answer == "1" or answer == "rent a car":
             print(f""" excelent choice your a step away from saving your {person_of_interest}.\n """)
             stage_2()
@@ -110,7 +110,7 @@ print(f"------------------------------------------------------------------------
 def stage_2():
     
     
-# looping until a user is out of guesses    
+### looping until a user is out of guesses    
     option = 2
 
     while option > 0:
@@ -121,7 +121,7 @@ def stage_2():
         2) D'ont get fuel """ )
         
         answer = input(prompt = ">")
-# Applying the conditions        
+### Applying the conditions        
         if answer == "1" or answer == "Get fuel":
             print(f"""correct choice, the hospital is far away and this is the last petrol station it would.\n""")
             stage_3()
@@ -151,7 +151,7 @@ def stage_3():
     On your way to the hospital, at a road roundabout you notice 3 roads, one of this roads will take you 
     straight to the hospital.\n """)
     
-# looping until a user is out of guesses         
+### looping until a user is out of guesses         
     chance = 2
 
     while chance > 0 :
@@ -188,7 +188,7 @@ def stage_3():
 
         
         
-# defining the fail funtion    
+### defining the fail funtion    
 def fail():
     print("\n")
     print(f""" Oh, I'm sorry {player_name}, looks like you've arrived late to the 
@@ -216,6 +216,6 @@ def Exit():
     game_start()
     
     
-# calling the funtions  
+### calling the funtions  
 game_start()
 #stage_1()
