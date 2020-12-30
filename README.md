@@ -1,9 +1,9 @@
 # python---game-sample
-# importing 
+## importing 
 
 from sys import exit
 
-# Intrducing the game
+## Intrducing the game
 # welcome to my game called , save the day 
 
 """
