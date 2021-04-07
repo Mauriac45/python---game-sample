@@ -4,7 +4,7 @@
 from sys import exit
 
 ### Intrducing the game
-### welcome to my game called , save the day 
+### welcome to my game called , "Save The Day"
 
 """
 Game :
